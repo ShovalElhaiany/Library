@@ -1,0 +1,50 @@
+#BackgroundVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+div {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 40pt;
+    letter-spacing: 1px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    border-color: rgb(0, 0, 0);
+    border-radius: 50px;
+    border: solid 5px rgb(0, 0, 0);
+    position: fixed;
+    top: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    margin-left: 400px;
+
+}
+
+#Library {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+#Library:hover {
+    background: #ddd;
+    color: black;
+}

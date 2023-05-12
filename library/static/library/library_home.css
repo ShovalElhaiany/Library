@@ -1,0 +1,100 @@
+#LibraryVideo {
+    z-index: 1;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+h1 {
+    z-index: 2;
+    color: rgb(255, 255, 255);
+    font-size: 40pt;
+    letter-spacing: 1px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    border-color: rgb(0, 0, 0);
+    border-radius: 50px;
+    border: solid 5px rgb(0, 0, 0);
+    position: fixed;
+    top: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    color: #000000;
+    width: 100%;
+    padding: 20px;
+    margin-left: 400px;
+}
+
+#Registration {
+    z-index: 3;
+    color: rgb(17, 39, 88);
+    font-size: 40pt;
+    letter-spacing: 1px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    border-color: rgb(0, 0, 0);
+    border-radius: 50px;
+    padding: 50px 10px 50px 10px;
+    background-image: url('./images/registration.jpg');
+    background-size: cover;
+    border: solid 5px rgb(0, 0, 0);
+    position: fixed;
+    right: 300px;
+    top: 300px;
+
+
+
+}
+
+#Customers {
+    z-index: 4;
+    color: rgb(17, 39, 88);
+    font-size: 40pt;
+    letter-spacing: 1px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    border-color: rgb(0, 0, 0);
+    border-radius: 50px;
+    padding: 50px 10px 50px 10px;
+    background-image: url('./images/Customers.jpg');
+    background-size: cover;
+    border: solid 5px rgb(0, 0, 0);
+    position: fixed;
+    left: 300px;
+    top: 300px;
+}
+
+#Shop {
+    z-index: 3;
+    color: rgb(17, 39, 88);
+    font-size: 40pt;
+    letter-spacing: 1px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    border-color: rgb(0, 0, 0);
+    border-radius: 50px;
+    padding: 50px 10px 50px 10px;
+    background-image: url('./images/registration.jpg');
+    background-size: cover;
+    border: solid 5px rgb(0, 0, 0);
+    position: fixed;
+    top: 300px;
+    text-align: center;
+}
+
+#Registration:hover {
+
+    color: rgb(0, 98, 255);
+    font-size: 45pt;
+    padding: 55px 15px 55px 15px;
+}
+
+#Customers:hover {
+    color: rgb(0, 98, 255);
+    font-size: 45pt;
+    padding: 55px 15px 55px 15px;
+}
+
+#Shop:hover {
+
+    color: rgb(0, 98, 255);
+    font-size: 45pt;
+    padding: 55px 15px 55px 15px;
+}

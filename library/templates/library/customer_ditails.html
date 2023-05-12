@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'library/customer_ditails.css' %}">
+    <title>Document</title>
+</head>
+
+<body>
+    {%if customer%}
+    <input type="image" ; name="Profile Picture " ; id="Profile Picture" ; tabindex="1" ; title="Profile Picture" ;
+        alt="Profile Picture" ; width="100" height="100" ; src="" />
+    <table>
+        <caption>{{customer.first_name}} {{customer.last_name}}</caption>
+        <tr>
+            <td class="x">First name:</td>
+            <td class="y">{{customer.first_name}}</td>
+        </tr><br />
+        <tr>
+            <td class="x">Last name:</td>
+            <td class="y">{{customer.last_name}}</td>
+        </tr><br />
+        <tr>
+            <td class="x">City:</td>
+            <td class="y">{{customer.city}}</td>
+        </tr><br />
+        <tr>
+            <td class="x">Country:</td>
+            <td class="y">{{customer.country}}</td>
+        </tr><br />
+        <tr>
+            <td class="x">Date Of Birth:</td>
+            <td class="y">{{customer.date_of_birth}}</td>
+        </tr><br />
+        <tr>
+            <td class="x">Gender:</td>
+            <td class="y">{{customer.gender}}</td>
+        </tr><br />
+        <tr>
+            <td class="x">Phone:</td>
+            <td class="y">{{customer.phone}}</td>
+        </tr><br />
+        <tr>
+            <td class="x">Email:</td>
+            <td class="y">{{customer.email}}</td>
+        </tr><br />
+    </table>
+    {%else%}
+    <p>No Customers found</p>
+    {%endif%}
+</body>
+
+</html>

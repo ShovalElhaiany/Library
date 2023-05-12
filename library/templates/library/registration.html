@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'library/registration.css' %}">
+    <title>New customer registration form</title>
+</head>
+
+<body>
+    <p id="sale">New sale!<br /> A gift book for the first 100 registrants</p>
+    <form action="{% url 'library:form' %}" ; method="post">
+        {% csrf_token %}
+        <div>
+            <h1>Registration Form</h1>
+            <p>Welcome to the registration page</p>
+            <p> here you can create a user and join us :)</p><br /><br />
+            <input type="button" ; name="Help" ; id="1" ; tabindex="1" ; title="Help" ; value="Help" ;
+                onclick="alert('To create a user, fill out the registration form, Enter your personal details in the form.')" />
+        </div>
+
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="first_name">First Name:</label>
+            <input type="Text" ; name="first_name" ; id="1" ; tabindex="1" ; title="First Name" ; size="20" ;
+                maxlength="20" ; placeholder="Enter First Name" ; required /><br /><br />
+            <label for="last_name">Last Name:</label>
+            <input type="Text" ; name="last_name" ; id="2" ; tabindex="2" ; title="Last Name" ; size="20" ;
+                maxlength="20" ; placeholder="Enter Last Name" ; required />
+        </fieldset>
+
+        <fieldset>
+            <legend>Residential Details</legend>
+            <label for="city">City:</label>
+            <input type="Text" ; name="city" ; id="3" ; tabindex="3" ; title="City" ; size="20" ; maxlength="20" ;
+                placeholder="Enter City" ; required /><br /><br />
+            <label for="country">Country:</label>
+            <input type="Text" ; name="country" ; id="4" ; tabindex="4" ; title="Country" ; size="20" ; maxlength="20" ;
+                placeholder="Enter Country" ; required /><br /><br />
+            <label for="date_of_birth">Date Of Birth:</label>
+            <input type="Date" ; name="date_of_birth" ; id="6" ; tabindex="6" ; title="Date" ; required /><br /><br />
+
+            <label for="favorite_color">Favorite Color:</label>
+            <input type="Color" ; name="favorite_color" ; id="Favorite Color" ; tabindex="5" ; title="Favorite Color" ;
+                list="Colors" />
+            <datalist id="Colors">
+                <option value="#FF0000"></option>
+                <option value="#FB00FF"></option>
+                <option value="#FF00AE"></option>
+                <option value="#FBFF00"></option>
+                <option value="#00FFEE"></option>
+                <option value="#37FF00"></option>
+                <option value="#001EFF"></option>
+                <option value="#FFAE00"></option>
+                <option value="#000000"></option>
+                <option value="#FFFFFF"></option>
+            </datalist><br /><br />
+            <label for="profile_picture">Profile Picture</label>
+            <input type="file" ; name="profile_picture" ; id="1" ; tabindex="1" ; title="Profile Picture" /><br /><br />
+        </fieldset>
+
+        <fieldset>
+            <legend>Gender</legend>
+            Mr.<input type="Radio" ; name="gender" ; id="7" ; tabindex="7" ; value="Mr" ; title="Mr" ; required />
+            Mrs.<input type="Radio" ; name="gender" ; id="8" ; tabindex="6" ; value="Mrs" ;title="Mrs" ; required />
+            Other<input type="Radio" ; name="gender" ; id="8" ; tabindex="6" ; value="Other" ;title="Other" ;
+                required />
+        </fieldset>
+
+        <fieldset>
+            <legend>Communication Details</legend>
+            <label for="phone">Phone:</label>
+            <input type="tel" ; name="phone" ; id="10" ; tabindex="10" ; title="Phone" ; size="20" ; maxlength="20" ;
+                placeholder="Enter Phone" ; required /><br /><br />
+            <label for="email">Email:</label>
+            <input type="email" ; name="email" ; id="9" ; tabindex="9" ; title="Email" ; size="20" ; maxlength="50" ;
+                placeholder="Enter Email" ; required />
+        </fieldset>
+
+        <fieldset>
+            <legend>Password</legend>
+            <label for="password">New Password</label><br>
+            <input type="Password" ; name="password" ; id="7" ; tabindex="7" ; title="New Password" ; size="20" ;
+                maxlength="20" ; placeholder="Enter New Password" ; /><br /><br />
+            <label for="confirm_password">Confirm Password</label><br>
+            <input type="Password" ; name="confirm_password" ; id="8" ; tabindex="8" ; title="Confirm password" ;
+                size="20" ; maxlength="20" ; placeholder="Confirm password" ; /><br /><br />
+            <label for="validation_question">Choose a Validation Question</label><br />
+
+            <select name="validation_question" ; id="" title="Validation Question">
+                <option value="" ; selected="selected"></option>
+                <option value="">What is the name of your first girlfriend?</option>
+                <option value="">What is the name of your elementry school?</option>
+                <option value="">What is the previous last name of your mom?</option>
+            </select><br /><br />
+
+            <label for="answer">Answer</label><br />
+            <input type="Text" ; name="answer" ; id="1" ; tabindex="1" ; title="Answer" ; size="30" ; maxlength="30" ;
+                placeholder="Enter Answer" />
+        </fieldset>
+
+        <fieldset>
+            <legend>Sending</legend>
+            <textarea name="comment" ; id="8" ; tabindex="8" ; title="Comment" ; maxlength="100" ; placeholder="Comment"
+                ; cols="30" ; rows="3"></textarea><br />
+
+            <div id="Terms">
+                <input type="checkbox" ; name="Advertisements" ; id="Terms" ; tabindex="2" ; title="Advertisements" ;
+                    checked="checked" ; disabled="disabled" />I agree to receive advertisements<br /><br />
+                <input type="checkbox" ; name="Regulations" ; id="Terms" ; tabindex="2" ; title="Regulations" />I
+                have read and agree to the terms <br /><br />
+            </div>
+            <input type="image" ; name="Reset" ; id="Reset" ; tabindex="8" ; title="Reset" ; alt="Reset" ; width="100"
+                height="50" ; src='{% static "../static/library/images/reset.jpg" %}' ;
+                onclick="alert('Start again')" />
+            <input type="image" ; name="Submit " ; id="Submit" ; tabindex="8" ; title="Submit" ; alt="Submit" ;
+                width="100" height="100" ; src='{% static "../static/library/images/submit.png" %}' ;
+                onclick="alert('The form has been sent successfully !')" />
+        </fieldset>
+    </form>
+</body>
+
+</html>

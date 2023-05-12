@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'library/library_home.css' %}">
+    <title>Document</title>
+</head>
+
+<body>
+    <video autoplay muted loop id="LibraryVideo">
+        <source src="../static/library/images/LibraryVideo.mp4" type="video/mp4">
+      </video>
+    <h1>Welcome To The Library</h1>
+    <div>
+        <a href="{% url 'library:customers' %}" ; id="Customers" ; name="Customers" ; tabindex="1" ; title="Customers">Customers</a>
+        <a href="{% url 'library:form' %}" ; id="Registration" ; name="Registration" ; tabindex="2" ; title="Registration">Registration</a>
+        <a href="{% url 'library:shop' %}" ; id="Shop" ; name="Shop" ; tabindex="2" ; title="Shop">Shop</a>
+    </div>
+</body>
+
+</html>

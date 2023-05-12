@@ -1,0 +1,71 @@
+body {
+   z-index: 1;
+   background-image: url('./images/form.jpg');
+   background-size: cover;
+   background-position: center;
+   background-attachment: scroll;
+   position: relative;
+   overflow-x: hidden;
+}
+
+form {
+   z-index: 2;
+   color: rgb(255, 255, 255);
+   text-align: left;
+   font-size: 15pt;
+   letter-spacing: 1px;
+   direction: ltr;
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   max-width: 90%;
+   border-color: rgb(0, 0, 0);
+   border-radius: 50px;
+   box-shadow: 2px 2px 5px #888;
+   text-transform: capitalize;
+   border-width: 3px 3px 3px 3px;
+   opacity: 100%;
+   zoom: 100%;
+   padding: 50px 10px 50px 10px;
+   text-shadow: -3px 5px 5px #999;
+   border: solid 5px rgb(0, 0, 0);
+   margin: auto;
+}
+
+
+#sale {
+   -webkit-transform: rotate(45deg);
+   -moz-transform: rotate(45deg);
+   -moz-border-radius: 10px;
+   background: rgba(69, 126, 240, 0.5);
+   color: rgb(255, 255, 255);
+   text-align: center;
+   font-size: x-large;
+   border-radius: 20px;
+   float: right;
+   padding: 10px 10px 10px 10px;
+   position: absolute;
+   box-shadow: 2px 2px 20px #888;
+   top: 150px;
+   right: -200px;
+   padding: 0px 200px;
+   text-align: center;
+}
+
+#Terms {
+   text-decoration: underline;
+}
+
+#Reset {
+   width: 100px;
+   height: 50px;
+   text-decoration: dashed;
+   padding-bottom: 30px;
+
+}
+
+#Submit {
+   width: 110px;
+   height: 110px;
+   text-decoration: dashed;
+   padding-top: 50px;
+
+}
